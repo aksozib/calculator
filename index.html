@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <section>
+        <div class="result">
+            <section>
+                <h3 class="fn">first number: 50</h3>
+                <h3 class="sn">second number: 5</h3>
+            </section>
+            <h3 class="res">
+                <div class="main-res"></div>
+            <div class="ball"></div>
+            </h3>
+        </div>
+
+        <div class="main-section">
+            <div class="btn">
+                <button onclick="add(50,5)"><i class="fas fa-plus"></i></button>
+                <button onclick="sub(50,5)"><i class="fas fa-minus"></i></button>
+                <button onclick="mul(50,5)"><i class="fas fa-times"></i></button>
+                <button onclick="div(50,5)"><i class="fas fa-divide"></i></button>
+                <button onclick="mod(50,5)"><i class="fas fa-percentage"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function add(f,s){
+            var add = f+s;
+            document.getElementsByClassName('main-res')[0].innerHTML=add;
+        }
+
+        function sub(f,s){
+            var add = f-s;
+            document.getElementsByClassName('main-res')[0].innerHTML=add;
+        }
+
+        function mul(f,s){
+            var add = f*s;
+            document.getElementsByClassName('main-res')[0].innerHTML=add;
+        }
+
+        function div(f,s){
+            var add = f/s;
+            document.getElementsByClassName('main-res')[0].innerHTML=add;
+        }
+
+        function mod(f,s){
+            var add = f%s;
+            document.getElementsByClassName('main-res')[0].innerHTML=add;
+        }
+    </script>
+</body>
+</html>
